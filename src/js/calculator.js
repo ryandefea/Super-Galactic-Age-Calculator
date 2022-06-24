@@ -5,4 +5,8 @@ export default class ageCalculator {
       this.usersAge = 32;
       this.mercuryAge = 0; 
   }
+
+    ageOnMercury() {
+      
+    }
 }
