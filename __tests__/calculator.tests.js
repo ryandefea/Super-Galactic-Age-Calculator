@@ -6,5 +6,8 @@ describe('ageCalculator', () => {
     let testPerson = new ageCalculator()
     expect(testPerson.mercuryAge).toBeCloseTo(133.3);
    });
-
+  test('should return users age om Venus years (32/.62)', () => {
+    let testPerson = new ageCalculator();
+    expect(testPerson.venusAge).toBeCloseTo(52.1);
+  })
  });
