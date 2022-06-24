@@ -14,4 +14,9 @@ export default class ageCalculator {
   getVenusAge() {
     return parseFloat((this.usersAge / 0.62).toFixed(1))
   }
+
+  getMarsAge() {
+    return parseFloat((this.usersAge / 1.88).toFixed(1))
+  }
+
 }
