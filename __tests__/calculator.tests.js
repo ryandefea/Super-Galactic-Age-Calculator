@@ -12,6 +12,6 @@ describe('ageCalculator', () => {
   });
   test('should return users age in Mars years (32*1.88)', () => {
     let testPerson = new ageCalculator();
-    expect(testPerson.marsAge).toBeCloseTo(60.1);
+    expect(testPerson.marsAge).toBeCloseTo(60.2);
   });
  });
