@@ -18,4 +18,9 @@ describe('ageCalculator', () => {
     let testPerson = new ageCalculator(usersAge);
     expect(testPerson.getJupiterAge()).toBeCloseTo(2.7);
   });
+  test('should return users years left on Earth', () => {
+    let testPerson = new ageCalculator(usersAge);
+    expect(testPerson.earthYearsLeft()).toEqual(68);
+  });
+
  });
