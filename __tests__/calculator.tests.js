@@ -16,6 +16,6 @@ describe('ageCalculator', () => {
   });
   test('should return users age in Jupiter years (32/379.52)', () => {
     let testPerson = new ageCalculator();
-    expect(testPerson.jupiterAge).toBeCloseTo(2.7);
+    expect(testPerson.getJupiterAge()).toBeCloseTo(2.7);
   });
  });
