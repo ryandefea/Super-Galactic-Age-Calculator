@@ -1,9 +1,9 @@
 //business logic
 
 export default class ageCalculator {
-    constructor() {
-      this.usersAge = 32;
-      this.jupiterAge = parseFloat((32/11.86).toFixed(1));
+    constructor(usersAge) {
+      this.usersAge = usersAge;
+
   }
 
   getMercuryAge() {
