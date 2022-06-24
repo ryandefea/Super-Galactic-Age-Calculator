@@ -8,6 +8,6 @@ describe('ageCalculator', () => {
    });
   test('should return users age om Venus years (32/.62)', () => {
     let testPerson = new ageCalculator();
-    expect(testPerson.venusAge).toBeCloseTo(52.1);
+    expect(testPerson.venusAge).toBeCloseTo(51.6);
   })
  });
