@@ -1,7 +1,7 @@
 //business logic
 
 export default class ageCalculator {
-    constructor()
+    constructor() {
       this.usersAge = 32;
       this.mercuryAge = 0; 
   }
