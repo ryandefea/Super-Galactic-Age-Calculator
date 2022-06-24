@@ -10,12 +10,12 @@ describe('ageCalculator', () => {
     let testPerson = new ageCalculator();
     expect(testPerson.venusAge).toBeCloseTo(51.6);
   });
-  test('should return users age in Mars years (32*1.88)', () => {
+  test('should return users age in Mars years (32/1.88)', () => {
     let testPerson = new ageCalculator();
-    expect(testPerson.marsAge).toBeCloseTo(60.2);
+    expect(testPerson.marsAge).toBeCloseTo(17);
   });
-  test('should return users age in Jupiter years (32*379.52)', () => {
+  test('should return users age in Jupiter years (32/379.52)', () => {
     let testPerson = new ageCalculator();
-    expect(testPerson.jupiterAge).toBeCloseTo(379.5);
+    expect(testPerson.jupiterAge).toBeCloseTo(2.6);
   });
  });
