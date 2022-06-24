@@ -3,10 +3,6 @@
 export default class ageCalculator {
     constructor() {
       this.usersAge = 32;
-      this.mercuryAge = 0; 
+      this.mercuryAge = parseFloat((32/.24).toFixed(1));
   }
-
-    ageOnMercury() {
-      
-    }
 }
