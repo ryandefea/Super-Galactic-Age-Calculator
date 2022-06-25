@@ -45,7 +45,7 @@ describe('ageCalculator', () => {
   });
   test('should return users years left on Jupiter', () => {
     let testPerson = new ageCalculator(usersAge);
-    // 1. convert earth years to mars years
+    // 1. convert earth years to Jupiter years
     // 2. life expectancy minus users age
     // 3. jupiter age equals 2.7 life expectancy equals 8.4
     expect(testPerson.jupiterYearsLeft()).toEqual(5.7);

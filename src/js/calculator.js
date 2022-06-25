@@ -48,7 +48,6 @@ export default class ageCalculator {
 
   marsYearsLeft() {
     let marsExpectancy =this.formatValue(this.lifeExpectancy / 1.88) 
-    // was returning too many decimal places
     return this.formatValue(marsExpectancy - this.getMarsAge());
   }
 
