@@ -38,5 +38,11 @@ export default class ageCalculator {
     return parseFloat(( venusExpectancy - this.getVenusAge()).toFixed(1));
   }
 
+  marsYearsLeft() {
+    let marsExpectancy = parseFloat((this.lifeExpectancy / 1.88).toFixed(1))
+    // was returning too many decimal places
+    return parseFloat(( marsExpectancy - this.getMarsAge()).toFixed(1));
+  }
+
 
 }

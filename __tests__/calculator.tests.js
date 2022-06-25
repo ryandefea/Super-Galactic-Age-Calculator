@@ -41,7 +41,7 @@ describe('ageCalculator', () => {
     // 1. convert earth years to mars years
     // 2. life expectancy minus users age
     // 3. mars age equals 17 life expectancy equals 53.1
-    expect(testPerson.venusYearsLeft()).toEqual(36.1);
+    expect(testPerson.marsYearsLeft()).toEqual(36.2);
   });
 
  });
