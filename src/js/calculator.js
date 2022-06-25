@@ -44,5 +44,11 @@ export default class ageCalculator {
     return parseFloat(( marsExpectancy - this.getMarsAge()).toFixed(1));
   }
 
+  jupiterYearsLeft() {
+    let jupiterExpectancy = parseFloat((this.lifeExpectancy / 11.86).toFixed(1))
+    // was returning too many decimal places
+    return parseFloat(( jupiterExpectancy - this.getJupiterAge()).toFixed(1));
+  }
+
 
 }
