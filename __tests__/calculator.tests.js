@@ -50,5 +50,10 @@ describe('ageCalculator', () => {
     // 3. jupiter age equals 2.7 life expectancy equals 8.4
     expect(testPerson.jupiterYearsLeft()).toEqual(5.7);
   });
+  test('should return years past life expectancy', () => {
+    let testPerson = new ageCalculator(130);
+    // 1. if im 130 years old im 30 years past life expectancy
+    expect(testPerson.earthYearsLeft()).toEqual(30);
+  });
 
  });

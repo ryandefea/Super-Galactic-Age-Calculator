@@ -32,7 +32,7 @@ export default class ageCalculator {
     //2.value is chopped off after the first decimal point by toFixed- toFixed turns it into a string
     //3.value is turned back into a number from a string
     //4.returns the value
-    return parseFloat(value.toFixed(1));
+    return (parseFloat(value.toFixed(1)));
   }
 
   mercuryYearsLeft() {
