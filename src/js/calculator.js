@@ -26,4 +26,9 @@ export default class ageCalculator {
   earthYearsLeft() {
     return this.lifeExpectancy - this.usersAge;
   }
+
+  mercuryYearsLeft() {
+    let mercuryExpectancy = parseFloat((this.lifeExpectancy / 0.24).toFixed(1))
+    return mercuryExpectancy - this.getMercuryAge();
+  }
 }

@@ -27,7 +27,7 @@ describe('ageCalculator', () => {
     // 1. convert earth years to mercury years
     // 2. life expectancy minus users age
     // 3. mercury age equals 133 life expectancy equals 416.6
-    expect(testPerson.mercuryYearsLeft()).toEqual(283.6);
+    expect(testPerson.mercuryYearsLeft()).toEqual(283.4);
   });
 
  });
