@@ -3,6 +3,7 @@
 export default class ageCalculator {
     constructor(usersAge) {
       this.usersAge = usersAge;
+      this.lifeExpectancy = 100;
 
   }
 
@@ -20,5 +21,9 @@ export default class ageCalculator {
 
   getJupiterAge() {
     return parseFloat((this.usersAge / 11.86).toFixed(1))
+  }
+
+  earthYearsLeft() {
+    return this.lifeExpectancy - this.usersAge;
   }
 }
