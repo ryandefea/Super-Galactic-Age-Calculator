@@ -27,28 +27,34 @@ export default class ageCalculator {
     return this.lifeExpectancy - this.usersAge;
   }
 
+  formatValue(value) {
+    //1.formatValue accepts the argument of value
+    //2.value is chopped off after the first decimal point by toFixed- toFixed turns it into a string
+    //3.value is turned back into a number from a string
+    //4.returns the value
+    return parseFloat(value.toFixed(1));
+  }
+
   mercuryYearsLeft() {
-    let mercuryExpectancy = parseFloat((this.lifeExpectancy / 0.24).toFixed(1))
-    return mercuryExpectancy - this.getMercuryAge();
+    let mercuryExpectancy = this.formatValue(this.lifeExpectancy / .24)
+    return this.formatValue(mercuryExpectancy - this.getMercuryAge());
   }
 
   venusYearsLeft() {
-    let venusExpectancy = parseFloat((this.lifeExpectancy / 0.62).toFixed(1))
+    let venusExpectancy = this.formatValue(this.lifeExpectancy / .62)
     // was returning too many decimal places
-    return parseFloat(( venusExpectancy - this.getVenusAge()).toFixed(1));
+    return this.formatValue(venusExpectancy - this.getVenusAge());
   }
 
   marsYearsLeft() {
-    let marsExpectancy = parseFloat((this.lifeExpectancy / 1.88).toFixed(1))
+    let marsExpectancy =this.formatValue(this.lifeExpectancy / 1.88) 
     // was returning too many decimal places
-    return parseFloat(( marsExpectancy - this.getMarsAge()).toFixed(1));
+    return this.formatValue(marsExpectancy - this.getMarsAge());
   }
 
   jupiterYearsLeft() {
-    let jupiterExpectancy = parseFloat((this.lifeExpectancy / 11.86).toFixed(1))
-    // was returning too many decimal places
-    return parseFloat(( jupiterExpectancy - this.getJupiterAge()).toFixed(1));
+    let jupiterExpectancy = this.formatValue(this.lifeExpectancy / 11.86)
+    return this.formatValue(jupiterExpectancy - this.getJupiterAge());
   }
-
 
 }
