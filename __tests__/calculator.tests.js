@@ -36,5 +36,12 @@ describe('ageCalculator', () => {
     // 3. venus age equals 51.6 life expectancy equals 161.2
     expect(testPerson.venusYearsLeft()).toEqual(109.7);
   });
+  test('should return users years left on Mars', () => {
+    let testPerson = new ageCalculator(usersAge);
+    // 1. convert earth years to mars years
+    // 2. life expectancy minus users age
+    // 3. mars age equals 17 life expectancy equals 53.1
+    expect(testPerson.venusYearsLeft()).toEqual(36.1);
+  });
 
  });
