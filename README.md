@@ -1,17 +1,14 @@
-# (Application Name)
+# Super Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### App that should give a user their age on other planets and life expectancy
 
-#### By (Your Name Here)
+#### By Ryan DeFea
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* Javascript
 
-## Description
+## App that should give a user their age on other planets and life expectancy
 
 ## Setup/Installation Requirements
 
@@ -23,9 +20,10 @@
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* No UI
 
-## License
+## MIT License
 
-## Contact Information
+[MIT](https://www.mit.edu/~amini/LICENSE.md) 
+
+Copyright (c) 2022 Ryan DeFea 
