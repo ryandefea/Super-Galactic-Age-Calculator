@@ -31,4 +31,12 @@ export default class ageCalculator {
     let mercuryExpectancy = parseFloat((this.lifeExpectancy / 0.24).toFixed(1))
     return mercuryExpectancy - this.getMercuryAge();
   }
+
+  venusYearsLeft() {
+    let venusExpectancy = parseFloat((this.lifeExpectancy / 0.62).toFixed(1))
+    // was returning too many decimal places
+    return parseFloat(( venusExpectancy - this.getVenusAge()).toFixed(1));
+  }
+
+
 }
