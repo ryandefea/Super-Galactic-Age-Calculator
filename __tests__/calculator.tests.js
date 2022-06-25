@@ -14,7 +14,7 @@ describe('ageCalculator', () => {
     let testPerson = new ageCalculator(usersAge);
     expect(testPerson.getMarsAge()).toBeCloseTo(17);
   });
-  test('should return users age in Jupiter years (32/379.52)', () => {
+  test('should return users age in Jupiter years (32/11.86)', () => {
     let testPerson = new ageCalculator(usersAge);
     expect(testPerson.getJupiterAge()).toBeCloseTo(2.7);
   });
@@ -42,6 +42,13 @@ describe('ageCalculator', () => {
     // 2. life expectancy minus users age
     // 3. mars age equals 17 life expectancy equals 53.1
     expect(testPerson.marsYearsLeft()).toEqual(36.2);
+  });
+  test('should return users years left on Jupiter', () => {
+    let testPerson = new ageCalculator(usersAge);
+    // 1. convert earth years to mars years
+    // 2. life expectancy minus users age
+    // 3. jupiter age equals 2.7 life expectancy equals 8.4
+    expect(testPerson.jupiterYearsLeft()).toEqual(5.7);
   });
 
  });
